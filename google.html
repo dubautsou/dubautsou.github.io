@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Grid</title>
-    <link rel="icon" href="tiles/driveico.png" type="image/png">
+    <title>Icon Sections</title>
+    <link rel="icon" href="tiles/favicon.png" type="image/png">
     <style>
         /* Reset */
         * {
@@ -15,12 +15,22 @@
 
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
             background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .section h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #222;
         }
 
         .container {
@@ -28,7 +38,6 @@
             margin: 0 auto;
             display: grid;
             gap: 20px;
-            padding: 0 20px;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         }
 
@@ -37,7 +46,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease;
         }
 
         .icon-tile a {
@@ -60,15 +69,13 @@
         .icon-tile p {
             font-size: 15px;
             font-weight: 500;
-            color: #333;
             opacity: 0.8;
             transition: color 0.2s ease;
         }
 
-        /* Hover animation */
+        /* Hover animation without shadow */
         .icon-tile:hover {
             transform: translateY(-5px);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .icon-tile:hover img {
@@ -82,36 +89,78 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- Placeholder icons with links and improved text -->
-        <div class="icon-tile">
-            <a href="https://example.com/link1" target="_blank">
-                <img src="tiles/icon1.png" alt="Icon 1">
-                <p>Home</p>
-            </a>
+    <!-- Section 1 -->
+    <div class="section">
+        <h1>Essentials</h1>
+        <div class="container">
+            <div class="icon-tile">
+                <a href="https://example.com/link1" target="_blank">
+                    <img src="tiles/icon1.png" alt="Icon 1">
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link2" target="_blank">
+                    <img src="tiles/icon2.png" alt="Icon 2">
+                    <p>Settings</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link3" target="_blank">
+                    <img src="tiles/icon3.png" alt="Icon 3">
+                    <p>Gallery</p>
+                </a>
+            </div>
         </div>
-        <div class="icon-tile">
-            <a href="https://example.com/link2" target="_blank">
-                <img src="tiles/icon2.png" alt="Icon 2">
-                <p>Settings</p>
-            </a>
-        </div>
-        <div class="icon-tile">
-            <a href="https://example.com/link3" target="_blank">
-                <img src="tiles/icon3.png" alt="Icon 3">
-                <p>Gallery</p>
-            </a>
-        </div>
-        <!-- Repeat above block for additional icons and text -->
     </div>
 
-    <!-- Placeholders for additional icons and text at the end of the file -->
-    <div class="container">
-        <div class="icon-tile">
-            <a href="https://example.com/placeholder-link" target="_blank">
-                <img src="tiles/placeholder-icon.png" alt="Placeholder Icon">
-                <p>Placeholder Text</p>
-            </a>
+    <!-- Section 2 -->
+    <div class="section">
+        <h1>Social Media</h1>
+        <div class="container">
+            <div class="icon-tile">
+                <a href="https://example.com/link4" target="_blank">
+                    <img src="tiles/icon4.png" alt="Icon 4">
+                    <p>Facebook</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link5" target="_blank">
+                    <img src="tiles/icon5.png" alt="Icon 5">
+                    <p>Twitter</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link6" target="_blank">
+                    <img src="tiles/icon6.png" alt="Icon 6">
+                    <p>Instagram</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h1>Productivity</h1>
+        <div class="container">
+            <div class="icon-tile">
+                <a href="https://example.com/link7" target="_blank">
+                    <img src="tiles/icon7.png" alt="Icon 7">
+                    <p>Calendar</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link8" target="_blank">
+                    <img src="tiles/icon8.png" alt="Icon 8">
+                    <p>Notes</p>
+                </a>
+            </div>
+            <div class="icon-tile">
+                <a href="https://example.com/link9" target="_blank">
+                    <img src="tiles/icon9.png" alt="Icon 9">
+                    <p>Reminders</p>
+                </a>
+            </div>
         </div>
     </div>
 
