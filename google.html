@@ -37,6 +37,16 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .icon-tile a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
 
         .icon-tile img {
@@ -44,29 +54,53 @@
             height: 80px;
             object-fit: contain;
             margin-bottom: 10px;
+            transition: transform 0.2s ease;
         }
 
         .icon-tile p {
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
             color: #333;
+            opacity: 0.8;
+            transition: color 0.2s ease;
+        }
+
+        /* Hover animation */
+        .icon-tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-tile:hover img {
+            transform: scale(1.1);
+        }
+
+        .icon-tile:hover p {
+            color: #007aff; /* iOS blue color */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Placeholder icons and text. Replace with your actual icons and text. -->
+        <!-- Placeholder icons with links and improved text -->
         <div class="icon-tile">
-            <img src="tiles/drive1.jpg" alt="dubautsou.studio@gmail.com">
-            <p>dubautsou.studio@gmail.com</p>
+            <a href="https://example.com/link1" target="_blank">
+                <img src="tiles/icon1.png" alt="Icon 1">
+                <p>Home</p>
+            </a>
         </div>
         <div class="icon-tile">
-            <img src="tiles/drive2.jpg" alt="info@dubautsou.studio">
-            <p>info@dubautsou.studio</p>
+            <a href="https://example.com/link2" target="_blank">
+                <img src="tiles/icon2.png" alt="Icon 2">
+                <p>Settings</p>
+            </a>
         </div>
         <div class="icon-tile">
-            <img src="tiles/drive3.jpg" alt="dubautsou@alconost.com">
-            <p>dubautsou@alconost.com</p>
+            <a href="https://example.com/link3" target="_blank">
+                <img src="tiles/icon3.png" alt="Icon 3">
+                <p>Gallery</p>
+            </a>
         </div>
         <!-- Repeat above block for additional icons and text -->
     </div>
@@ -74,8 +108,10 @@
     <!-- Placeholders for additional icons and text at the end of the file -->
     <div class="container">
         <div class="icon-tile">
-            <img src="tiles/placeholder-icon.png" alt="Placeholder Icon">
-            <p>Placeholder Text</p>
+            <a href="https://example.com/placeholder-link" target="_blank">
+                <img src="tiles/placeholder-icon.png" alt="Placeholder Icon">
+                <p>Placeholder Text</p>
+            </a>
         </div>
     </div>
 
