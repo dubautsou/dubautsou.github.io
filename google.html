@@ -86,8 +86,38 @@
         .icon-tile:hover p {
             color: #007aff; /* iOS blue color */
         }
+
+         .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Стили для кнопки-ссылки */
+        .responsive-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Стили для эффекта наведения */
+        .responsive-button:hover {
+            background-color: #0056b3;
+            
     </style>
 </head>
+
+
 <body>
 
     <h1>Google</h1>
@@ -156,7 +186,7 @@
         
 <!-- Gdrive Alconost -->
         <div class="icon-tile">
-            <a href="https://drive.google.com/drive/u/2/my-drive">
+            <a href="https://drive.google.com/drive/u/2/folders/1HTzE7E8ITqXaEE_8aAWJvm1palLIJNAd">
                 <img src="tiles/drive3.png">
                 <p>Alconost</p>
             </a>
@@ -181,6 +211,10 @@
 
 <!-- End of the block -->
     </div>
+
+<div class="button-container">
+    <a href="https://github.com/dubautsou/dubautsou.github.io/edit/main/google.html" class="responsive-button">edit this page</a>
+</div>
 
 
 </body>
